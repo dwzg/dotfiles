@@ -29,6 +29,8 @@ alias ls='exa'
 alias ll='exa -l'
 alias la='exa -la'
 
+tput smkx # fix del key not working in st
+
 # Start X at login
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
